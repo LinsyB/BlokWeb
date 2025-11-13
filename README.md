@@ -61,6 +61,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De meeste links en knoppen worden duidelijk aangekondigd en geven goed aan waar ze naartoe leiden. De productinformatie is ook uitgebreid, bij giftsets vertelt de screenreader bijvoorbeeld meteen welke producten erin zitten, wat handig is voor wie de afbeeldingen niet kan zien. Tegelijkertijd kan dit wel wat veel informatie tegelijk zijn, waardoor het soms onoverzichtelijk wordt.
   <img src="readme-images/Screanreader test links.png" width="500px" alt="rituals link lijst">
   Toch zijn er ook nog punten die beter kunnen. Er zijn nog steeds enkele links die alleen als “koppeling” worden voorgelezen zonder verdere uitleg, wat verwarrend kan zijn. Daarnaast reageren sommige pop-ups en menu’s niet goed op de screenreader of toetsenbordbediening, waardoor het moeilijk is om daar doorheen te gaan.
+
+  <b>WCAG checklist bevindingen</b> <br>
+  De Rituals-website is al redelijk toegankelijk. De structuur is logisch, de koppen zijn duidelijk en de meeste teksten, links en knoppen werken goed met een screenreader. Ook het kleurcontrast en de vormgeving zijn toegankelijk.
+
+  Er zijn wel nog een paar verbeterpunten. Sommige afbeeldingen hebben geen of een te vage alt-tekst, waardoor het niet altijd duidelijk is wat ze betekenen. Interactieve onderdelen, zoals pop-ups en menu’s, werken niet altijd goed met de focus, het kan wel verspringen, maar blijft alsnog soms hangen. Ook missen sommige video’s en audiofragmenten nog ondertiteling of transcripties.
+
 </details>
 
 
