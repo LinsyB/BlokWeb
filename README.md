@@ -62,7 +62,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/Screanreader test links.png" width="500px" alt="rituals link lijst">
   Toch zijn er ook nog punten die beter kunnen. Er zijn nog steeds enkele links die alleen als “koppeling” worden voorgelezen zonder verdere uitleg, wat verwarrend kan zijn. Daarnaast reageren sommige pop-ups en menu’s niet goed op de screenreader of toetsenbordbediening, waardoor het moeilijk is om daar doorheen te gaan.
 
-  <b>WCAG checklist bevindingen</b> <br>
+  <b>WCAG checklist bevindingen</b> 
   De Rituals-website is al redelijk toegankelijk. De structuur is logisch, de koppen zijn duidelijk en de meeste teksten, links en knoppen werken goed met een screenreader. Ook het kleurcontrast en de vormgeving zijn toegankelijk.
 
   Er zijn wel nog een paar verbeterpunten. Sommige afbeeldingen hebben geen of een te vage alt-tekst, waardoor het niet altijd duidelijk is wat ze betekenen. Interactieve onderdelen, zoals pop-ups en menu’s, werken niet altijd goed met de focus, het kan wel verspringen, maar blijft alsnog soms hangen. Ook missen sommige video’s en audiofragmenten nog ondertiteling of transcripties.
@@ -77,10 +77,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img scr="readme-images/Frame 1 (1).png" width="375px" alt="breakdown van de pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Frame 2.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
