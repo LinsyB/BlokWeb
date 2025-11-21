@@ -14,9 +14,11 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+    --kleur-tekst: #1c1a19;
+	--kleur-tekst-header: #d2d2d2;
+    --kleur-accent: #c2ae99; 
+    --font-tekst: "Segoe UI";
+    --font-kop: "Times New Roman";
 }
 
 
@@ -29,3 +31,97 @@
 
 /* jouw code */
 
+body {
+    font-family: var(--font-tekst);
+    color: var(--kleur-tekst);
+    font-size: 1rem;
+}
+
+header {
+	background-color: #1c1a19;
+	color: var(--kleur-tekst-header);
+}
+
+header a, footer a{
+	color: var(--kleur-tekst-header);
+}
+
+header article:first-child {
+	background-color: #242222 ;
+}
+
+section{
+	margin: 2em;
+}
+
+article{
+	margin: 2em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+	margin: 0.5em;
+}
+
+main a {
+	color: var(--kleur-tekst);
+}
+
+
+main button, main article a {
+	background-color: white;
+	border-color: var(--kleur-tekst-header);
+	padding: 0.5em;
+	border-radius: 100%;
+	border-style: solid;
+}
+
+header button{
+	background-color: #1c1a19;
+	border: none;
+}
+
+footer {
+	background-color: #1c1a19;
+	color: var(--kleur-tekst-header);
+}
+
+footer section:first-child {
+	background-color: #242222;
+}
+
+footer section:last-child {
+	background-color: white;
+	color: var(--kleur-tekst);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-kop);
+    font-weight: 400;
+    margin: 0 0 0.5em;
+}
+
+h1 {
+    font-size: 2.625em;
+}
+
+h2 {
+    font-size: 1em;
+    color: var(--kleur-accent);
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
