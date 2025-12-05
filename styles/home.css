@@ -1,0 +1,259 @@
+main > section:nth-of-type(2) article > p:nth-of-type(2) {
+  font-size: 1em;
+  letter-spacing: 0.03em;
+}
+
+main > section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  overflow: hidden;
+}
+
+main > section:first-of-type > a:first-of-type img {
+  width: 100%;
+  height: 75vh;
+  margin-top: -4.2em;
+  object-fit: cover;
+}
+
+main > section:first-of-type ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  overflow-x: auto;
+  padding: 1em;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+main > section:first-of-type li a {
+  color: var(--tekst-kleur-licht);
+  background-color: rgba(26, 25, 25, 0.4);
+  padding: .5em 1em;
+  border-radius: 2em;
+}
+
+main > section:first-of-type > section a,
+section:nth-of-type(3) > a,
+footer > section:first-of-type > a,
+footer > section:nth-of-type(2) section:nth-of-type(3) > button:last-of-type {
+  background-color: var(--product-kleur);
+  padding: 1.7em 2.3em;
+  color: var(--kleur-tekst);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  border: 0.07em solid var(--detail-kleur);
+}
+
+main > section:first-of-type > section a:hover,
+footer > section:first-of-type > a:last-of-type:hover {
+  background-color: var(--detail-kleur);
+  transition: 0.2s ease;
+}
+
+main > section:first-of-type > section a:active,
+footer > section:first-of-type > a:last-of-type:active {
+  background-color: var(--Footer-h2-kleur);
+}
+
+main > section:first-of-type > section {
+  background-color: rgba(26, 25, 25, 0.8);
+  width: 100%;
+  margin-top: -13.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+}
+
+main > section:first-of-type > section h2,
+main > section:first-of-type > section h3 {
+  color: var(--tekst-kleur-licht);
+}
+
+main > section:nth-of-type(2),
+main > section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  padding-right: 0;
+  gap: 1.3em;
+}
+
+main > section:nth-of-type(2) ul,
+main > section:nth-of-type(4) ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6em;
+  overflow-x: auto;
+}
+
+main > section:nth-of-type(2) article,
+main > section:nth-of-type(4) article {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  grid-template-rows: auto 1fr auto;
+  border-bottom: 1px solid var(--detail-kleur);
+}
+
+main > section:nth-of-type(2) article > img,
+main > section:nth-of-type(4) article > img {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  width: 13em;
+  padding: 2em 0;
+  background-color: var(--product-achtergrond);
+}
+
+main > section:nth-of-type(2) article h4,
+main > section:nth-of-type(4) article h4 {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  padding: 0.4em;
+}
+
+main > section:nth-of-type(2) article p,
+main > section:nth-of-type(4) article p {
+  grid-column: 1 / -1;
+  font-size: 0.8em;
+  padding-left: 0.4em;
+}
+
+main > section:nth-of-type(2) article p:nth-of-type(1),
+main > section:nth-of-type(4) article p:nth-of-type(1) {
+  grid-row: 3;
+  color: var(--product-tekst);
+  margin-bottom: 5em;
+}
+
+main > section:nth-of-type(2) article p:nth-of-type(2),
+main > section:nth-of-type(4) article p:nth-of-type(2) {
+  grid-row: 4;
+  grid-column: 1;
+  align-self: end;
+  font-size: 1em;
+  font-family: var(--font-kopjes);
+}
+
+main > section:nth-of-type(2) article p:nth-of-type(3),
+main > section:nth-of-type(4) article p:nth-of-type(3) {
+  grid-row: 5;
+}
+
+main > section:nth-of-type(2) article button,
+main > section:nth-of-type(4) article button {
+  justify-self: end;
+  align-self: end;
+  grid-row: 4;
+  grid-column: 2;
+  width: 3.6em;
+  height: 3.6em;
+  border-radius: 50%;
+  border: 0.07em solid var(--detail-kleur);
+  background-color: transparent;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  main > section:nth-of-type(2) article button img,
+main > section:nth-of-type(4) article button img {
+  filter: invert(1);
+}
+
+}
+
+main > section:nth-of-type(2) article button:hover,
+main > section:nth-of-type(4) article button:hover {
+  background-color: var(--Footer-h2-kleur);
+  transition: 0.1s ease;
+}
+
+main > section:nth-of-type(2) article button:active,
+main > section:nth-of-type(4) article button:active {
+  transform: scale(1.15);
+}
+
+section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  padding: 2em;
+}
+
+section:nth-of-type(3) > img {
+  height: 65vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+section:nth-of-type(3) > a {
+  align-self: flex-start;
+}
+
+section:nth-of-type(3) > a:hover {
+  background-color: var(--achtergrond-knop);
+  color: var(--product-achtergrond);
+  transition: 0.2s ease;
+}
+
+section:nth-of-type(3) > a:active {
+  background-color: var(--Footer-h2-kleur);
+}
+
+main section:last-of-type {
+  background-color: var(--product-achtergrond);
+  padding: 1em;
+}
+
+main section:last-of-type p {
+  font-family: var(--font-overige-tekst);
+  font-style: italic;
+  font-size: .75em;
+  text-align: center;
+}
+
+main section:last-of-type a {
+  text-decoration: underline;
+  color: var(--kleur-h2);
+}
+
+
+
+@media (min-width: 1020px) {
+  main section:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 2em;
+  align-items: start;
+  }
+
+  main section:nth-of-type(2) h2 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 1em;
+    margin-top: 15em;
+  }
+
+  main section:nth-of-type(2) h3 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 7em;
+
+  }
+  main section:nth-of-type(2) ul {
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 2;
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    padding-bottom: 1em;
+  }
+}

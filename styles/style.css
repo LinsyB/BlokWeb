@@ -1,127 +1,589 @@
-/**************/
-/* CSS REMEDY */
-/**************/
+@font-face {
+  font-family: "Scala Sans Pro";
+  src: url("../fonts/ScalaSansW05-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Scala Sans Pro";
+  src: url("../fonts/ScalaSansW05-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Scala Sans Pro";
+  src: url("../fonts/ScalaSansW05-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Scala Sans Pro";
+  src: url("../fonts/ScalaSansW05-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ClassGarmond";
+  src: url("../fonts/ClassGarmndBTW05-Roman.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ClassGarmond";
+  src: url("../fonts/ClassGarmndBTW05-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ClassGarmond";
+  src: url("../fonts/ClassGarmndBTW05-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
 }
 
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
 :root {
-    --kleur-tekst: #1c1a19;
-	--kleur-tekst-header: #d2d2d2;
-    --kleur-accent: #c2ae99; 
-    --font-tekst: "Segoe UI";
-    --font-kop: "Times New Roman";
+  color-scheme: light dark;
+  --tekst-kleur-licht: light-dark(#ffffff, #ffffff);
+  --kleur-tekst: light-dark(#1a1919, #E6E2DC);
+  --kleur-tekst-header: light-dark(#d2d2d2, #DCD6C8);
+  --kleur-h2: light-dark(#8e7165, #CDB47A);
+  --header-footer-2ekleur: light-dark(#242222, #0F1A13);
+  --product-kleur: light-dark(#ffffff, #18221C);
+  --product-tekst: light-dark(#626262, #BFB9AC);
+  --detail-kleur: light-dark(#dadada, #8E7A4F);
+  --product-achtergrond: light-dark(#faf9f7, #0B1510);
+  --Footer-h2-kleur: light-dark(#c1ad98, #CDB47A);
+  --achtergrond-contrast: light-dark(#1a1919, #441b1b);
+  --achtergrond-knop: light-dark(#1a1919, #E6E2DC);
+  --achtergrond-input: light-dark(#242222, #242222);
+
+  --font-kopjes: "ClassGarmond";
+  --font-overige-tekst: "Scala Sans Pro";
 }
 
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    font-family: var(--font-tekst);
-    color: var(--kleur-tekst);
-    font-size: 1rem;
+  font-family: var(--font-overige-tekst);
+  font-weight: 300;
+  font-size: 1em;
+  color: var(--kleur-tekst);
+  background-color: var(--product-kleur);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+nav > ul:first-of-type {
+  position: static;
+  translate: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+  display: flex;
+}
+
+nav > ul:first-of-type > li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+nav > ul:last-of-type {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  translate: 100%;
+  transition: translate 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 3.5em;
+  padding-left: 5em;
+  background: var(--achtergrond-contrast);
+  color: var(--tekst-kleur-licht);
+  z-index: 10;
+}
+
+nav ul li a {
+  color: var(--tekst-kleur-licht);
+  font-family: var(--font-kopjes);
+  font-size: 1.6em;
+}
+
+nav.toonMenu > ul:last-of-type {
+  translate: 0;
+}
+
+nav a:first-of-type {
+  margin-right: auto;
+}
+
+nav a:first-of-type img {
+  width: 8em;
+}
+
+nav button:first-of-type {
+  background: none;
+  border: none;
+  z-index: 11;
+}
+
+nav ul form {
+  display: flex;
+  gap: 0.5em;
 }
 
 header {
-	background-color: #1c1a19;
-	color: var(--kleur-tekst-header);
+  background-color: var(--header-footer-2ekleur);
+  color: var(--kleur-tekst-header);
+  display: flex;
+  flex-direction: column;
 }
 
-header a, footer a{
-	color: var(--kleur-tekst-header);
+header > ul:first-of-type {
+  margin:0;
+  padding: 1em;
+  list-style-type:"";
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  anchor-name: --scrolbareTekst;
+  font-size: 0.7em;
+  letter-spacing: 0.04em;
+  color: var(--tekst-kleur-licht);
 }
 
-header article:first-child {
-	background-color: #242222 ;
+header > ul:first-of-type::scroll-button(*) {
+  position: fixed;
+  position-anchor: --scrolbareTekst;
+  position-visibility: always;
+  appearance:none;
+  background:none;
+  border:none;
+  color: var(--tekst-kleur-licht);
 }
 
-section{
-	margin: 2em;
+header > ul:first-of-type::scroll-button(right) {
+  position-area: center;
+  justify-self:end;
+  margin-right: 2.5em;
+  content: '>' / 'Next';
 }
 
-article{
-	margin: 2em;
+header > ul:first-of-type::scroll-button(left) {
+  position-area: center;
+  justify-self:start;
+  margin-left: 2.5em;
+  content: '<' / 'Previous';
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-	display: flex;
+header > ul:first-of-type > li {
+  flex-basis:100%;
+  flex-shrink:0;
+  scroll-snap-align:center;
+  text-align:center;
 }
 
+header > ul:first-of-type a {
+  color: var(--Footer-h2-kleur);
+  text-decoration: underline;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1.5em;
+  gap: 1em;
+  background-color: var(--achtergrond-contrast);
+  width: 100%;
+}
+
+header nav img,
+header button img {
+  width: 1.7em;
+  height: auto;
+}
+
+button,
 a {
-	text-decoration: none;
-	margin: 0.5em;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
-main a {
-	color: var(--kleur-tekst);
-}
-
-
-main button, main article a {
-	background-color: white;
-	border-color: var(--kleur-tekst-header);
-	padding: 0.5em;
-	border-radius: 100%;
-	border-style: solid;
-}
-
-header button{
-	background-color: #1c1a19;
-	border: none;
-}
-
-footer {
-	background-color: #1c1a19;
-	color: var(--kleur-tekst-header);
-}
-
-footer section:first-child {
-	background-color: #242222;
-}
-
-footer section:last-child {
-	background-color: white;
-	color: var(--kleur-tekst);
-}
-
-h1, h2, h3, h4 {
-    font-family: var(--font-kop);
-    font-weight: 400;
-    margin: 0 0 0.5em;
-}
-
-h1 {
-    font-size: 2.625em;
+h2, h3, h4, h5 {
+  font-family: var(--font-kopjes);
+  font-weight: 400;
 }
 
 h2 {
-    font-size: 1em;
-    color: var(--kleur-accent);
-    letter-spacing: 0.05em;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: var(--kleur-h2);
+  letter-spacing: 0.2em;
 }
 
 h3 {
-    font-size: 1.7em;
+  font-weight: 300;
+  font-size: 1.75em;
+  letter-spacing: 0.05em;
 }
 
 h4 {
-    font-size: 1.1em;
+  font-size: 1em;
+  letter-spacing: 0.03em;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  scrollbar-width: none;
+}
+
+footer {
+  background: var(--header-footer-2ekleur);
+  color: var(--tekst-kleur-licht);
+  padding-top: 4em;
+}
+
+footer h2 {
+  color: var(--Footer-h2-kleur);
+}
+
+footer > section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.6em;
+  padding: 3em;
+}
+
+footer > section:first-of-type h3 {
+  color: var(--tekst-kleur-licht);
+}
+
+footer > section:first-of-type p {
+  width: 100%;
+  line-height: 1.6;
+  color: var(--tekst-kleur-licht);
+}
+
+footer > section:first-of-type p a {
+  color: var(--Footer-h2-kleur);
+  text-decoration: underline;
+}
+
+footer > section:first-of-type form input {
+  width: 100%;
+  border: none;
+  padding: 1.2em;
+  background-color: var(--achtergrond-contrast);
+  font-size: 1em;
+  color: var(--kleur-tekst-header);
+  font-family: var(--font-kopjes);
+  border: 1px solid transparent;
+}
+
+footer > section:first-of-type input::placeholder {
+  color: var(--kleur-tekst-header);
+}
+
+footer > section:first-of-type > a:last-of-type {
+  color: var(--kleur-tekst);
+}
+
+footer > section:first-of-type form input:hover {
+  border-color: var(--detail-kleur);
+}
+
+footer > section:first-of-type form input:active {
+  border-color: var(--tekst-kleur-licht);
+}
+
+footer section:nth-of-type(2),
+footer section:nth-of-type(3) {
+  background-color: var(--achtergrond-contrast);
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(1) ul {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(1) ul li {
+  border-bottom: 1px solid var(--product-tekst);
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(1) ul li:first-of-type {
+  border-top: 1px solid var(--product-tekst);
+}
+
+footer > section:nth-of-type(2) ul li button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  padding: 1em 0;
+  color: var(--tekst-kleur-licht);
+  font-family: var(--font-kopjes);
+  font-size: 1em;
+}
+
+footer > section:nth-of-type(2) ul li button img {
+  width: 1.3em;
+  height: auto;
+  filter: invert(1);
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 2em;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(2) h2 {
+  flex-basis: 100%;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(2) img {
+  width: 10em;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(3) form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(3) >button:last-of-type {
+  color: var(--kleur-tekst-header);
+  align-self: flex-start;
+  background-color: var(--achtergrond-knop);
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(3) > button:last-of-type:hover {
+  background-color: var(--kleur-h2);
+  transition: 0.2s ease;
+  border-color: var(--kleur-h2);
+  color: var(--product-kleur);
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(3) > button:last-of-type:active {
+  background-color: var(--Footer-h2-kleur);
+  transition: 0.1s;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(4) h2 {
+  padding: 3em;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(4) dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.5em;
+  padding: 2em;
+  padding-top: 0;
+  width: 23em;
+  color: var(--kleur-tekst-header);
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(4) ul:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  padding: 2em;
+  padding-top: 0;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(4) ul:last-of-type {
+  display: flex;
+  gap: 2em;
+  padding: 2em;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(4) ul:last-of-type li:nth-of-type(2) img {
+  width: 4em;
+}
+
+footer > section:last-of-type {
+  background-color: var(--product-kleur);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 3em 0;
+}
+
+footer > section:last-of-type ul:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > section:last-of-type ul:first-of-type img {
+  width: 50px;
+}
+
+footer > section:last-of-type p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--kleur-tekst);
+}
+
+footer > section:last-of-type ul:last-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+
+footer > section:last-of-type ul:last-of-type a {
+  color: var(--kleur-tekst);
+}
+
+footer > section:last-of-type ul:last-of-type a:hover {
+  text-decoration: underline;
+}
+
+footer > section:nth-of-type(2) section:nth-of-type(3) button:first-of-type {
+  color: var(--kleur-tekst-header);
+  font-family: var(--font-kopjes);
+}
+
+input {
+  appearance: none;
+}
+
+select, ::picker(select) {
+  appearance: base-select;
+}
+
+select {
+  width: 100%;
+  padding: 1em;
+  background: var(--header-footer-2ekleur);
+  color: var(--tekst-kleur-licht);
+  border: none;
+  font-family: var(--font-overige-tekst);
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+select:hover,
+select:focus,
+select:focus-within {
+  border: 1px solid var(--product-tekst);
+}
+
+select:active {
+  background-color: var(--achtergrond-contrast);
+}
+
+selectedcontent {
+  display:flex;
+  align-items:center;
+  gap: 0.7em;
+  font-family: var(--font-overige-tekst);
+  color: var(--tekst-kleur-licht);
+}
+
+selectedcontent img {
+  width: 2em;
+}
+
+option {
+  display:flex;
+  align-items:center;
+  gap: 0.7em;
+  padding: 0.6em;
+  background-color: var(--header-footer-2ekleur);
+  color: var(--tekst-kleur-licht);
+  border: 0.06em solid var(--product-tekst);
+}
+
+option:hover {
+  background-color: var(--achtergrond-contrast);
+}
+
+option:active {
+  background-color: var(--achtergrond-input);
+}
+
+option img {
+  width:1.6em;
+}
+
+
+/* snap ik niet */
+h1 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  font-size: 0.01em;
+}
+
+
+
+button:focus {
+  border: 0.06em solid var(--product-tekst);
+}
+
+a:focus {
+  border: 0.06em solid var(--product-tekst);
+}
+
+

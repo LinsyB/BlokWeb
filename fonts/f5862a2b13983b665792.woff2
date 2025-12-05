@@ -1,0 +1,1 @@
+export default __webpack_public_path__ + "app/static/fonts/ClassGarmndBTW05-Roman.woff2";
