@@ -226,6 +226,10 @@ main section:last-of-type a {
 }
 
 
+ main section:nth-of-type(2) > p:first-of-type {
+    display:none;
+  }
+
 
 @media (min-width: 1020px) {
   main section:nth-of-type(2) {
@@ -246,8 +250,15 @@ main section:last-of-type a {
     grid-column: 1;
     grid-row: 1;
     margin-top: 7em;
-
   }
+
+   main section:nth-of-type(2) > p:first-of-type {
+    display: block;
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: -7em;
+  }
+
   main section:nth-of-type(2) ul {
     grid-column: 2 / span 4;
     grid-row: 1 / span 2;
@@ -255,5 +266,6 @@ main section:last-of-type a {
     overflow-x: auto;
     gap: 1em;
     padding-bottom: 1em;
-  }
+  } 
+
 }
