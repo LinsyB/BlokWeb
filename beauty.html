@@ -7,6 +7,8 @@
     <title>RITUALS - Beauty</title>
 
     <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/beauty.css" rel="stylesheet">
+
     <link rel="icon" type="image/svg+xml" href="images/Rituals_Cosmetics_logo.png">
 </head>
 
@@ -14,7 +16,7 @@
     <header>
         <ul>
             <li>Op werkdagen vóór 19:00 besteld, morgen in huis</li>
-            <li>klik en Collect. <a href="">Meer info</a></li>
+            <li>klik en Collect. <a href="#">Meer info</a></li>
             <li>Gratis verzending bij bestellingen vanaf €35</li>
         </ul>
 
@@ -23,7 +25,7 @@
                 <img src="images/hamburgermenu.svg" alt="menu">
             </button>
 
-            <a href="#">
+            <a href="index.html">
                 <img src="images/rituals_logo.svg" alt="logo">
             </a>
 
@@ -64,7 +66,7 @@
     <main>
         <section>
             <h1>Beauty</h1>
-            <img src="" alt="">
+            <img src="images/sustainablepackaging_Super-widescreen.webp" alt="Beauty Pagina Banner">
             <ul>
                 <li><a href="#">Skincare voor haar</a></li>
                 <li><a href="#">Parfum</a></li>
@@ -74,63 +76,237 @@
                 <li><a href="#">Sieraden</a></li>
             </ul>
         </section>
+
         <section>
             <h2>Alle beauty producten</h2>
-            <button><img src="" alt="Filteren">Filteren</button>
+            <button><img src="images/filter-icoon.png" alt="Filteren">Filteren</button>
             <p>173 producten</p>
-            <button>Bestsellers</button>
-            <article>
-                <h4>Travel - Velvet Aura Perfume Oil</h4>
-                <p>Intuitia, parfumolie, 15ml</p>
-                <p>€18,90</p>
-                <button><img src="" alt=""></button>
-            </article>
-            <article>
-                <h4>Shampoo</h4>
-                <p>Homme, shampoo, 250ml</p>
-                <p>€14,50</p>
-                <button><img src="" alt=""></button>
-            </article>
-            <article>
-                <h4>Refill Anti-Ageing Day Cream</h4>
-                <p>The Ritual of Namaste, refill Anti-Ageing dagcreme, 50ml</p>
-                <p>€26,32</p>
-                <button><img src="" alt=""></button>
-            </article>
-                <article>
-                <h4>Fleurs de l'Himalaya</h4>
-                <img src="" alt="">
-                <p>The Iconic Collection eau de parfum, 50ml </p>
-                <p>€49,90</p>
-                <button><img src="" alt=""></button>
-            </article>
-                <article>
-                <h4>2-in-1 Shower Gel</h4>
-                <img src="" alt="">
-                <p>Sport, 2-in-1 douchegel, 200ml</p>
-                <p>€9,90</p>
-                <button><img src="" alt=""></button>
-            </article>
-                <article>
-                <h4>Refill Anti-Ageing Night Cream</h4>
-                <img src="" alt="">
-                <p>The Ritual of Namaste, refill anti-ageing nachtcreme, 50ml</p>
-                <p>€27,92</p>
-                <button><img src="" alt=""></button>
-            </article>
-                <article>
-                <h4>Travel - Soleil d'Or</h4>
-                <img src="" alt="">
-                <p>The Iconic Collection, reis eau de parfum, 15ml</p>
-                <p>€17,90</p>
-                <button><img src="" alt=""></button>
-            </article>
-                <article>
-                <h4>Refill Firming Day Cream</h4>
-                <img src="" alt="">
-                <p>The Ritual of Namaste, navulling verstevigende dagcreme, 50ml</p>
-                <p>€30,32</p>
-                <button><img src="" alt=""></button>
-            </article>
+            <select>
+                <option value="bestsellers">Bestsellers</option>
+                <option value="price-low-high">Prijs: laag - hoog</option>
+                <option value="price-high-low">Prijs: hoog - laag</option>
+                <option value="new">Nieuw</option>
+            </select>
+        </section> 
+
+        <section>
+            <ul>
+                <li>
+                    <h4>voor my rituals members</h4>
+                    <p>Ontvang een cadeau naar keuze als je nog €50,00 besteedt.</p>
+                    <img src="images/extra-memm-model.webp" alt="Rituals members">
+                    <a href="#">log in of meld je aan</a>
+                    <p>Psst... Bij bestellingen vanaf €35 betaal je geen verzendkosten.</p>
+                </li>
+                <li>
+                    <article>
+                        <h4>Travel - Velvet Aura Perfume Oil</h4>
+                        <img src="images/parfum.webp" alt="Parfum Olie">
+                        <p>Intuitia, parfumolie, 15ml</p>
+                        <p>€18,90</p>
+                       <button type="button">
+                            <img src="images/voegtoe_winkelwagen.svg" alt="Aan winkelwagen toevoegen" width="15">
+                        </button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Shampoo</h4>
+                        <img src="images/shampoo.webp" alt="Shampoo Homme">
+                        <p>Volumising shampoo, 250ml</p>
+                        <p>€14,50</p>
+                        <button type="button">
+                            <img src="images/voegtoe_winkelwagen.svg" alt="Aan winkelwagen toevoegen" width="15">
+                        </button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Refill Anti-Ageing Day Cream</h4>
+                        <img src="images/dagcreme.webp" alt="Anti ageing dagcreme">
+                        <p>The Ritual of Namaste, refill Anti-Ageing dagcreme, 50ml</p>
+                        <p>€26,32</p>
+                       <button type="button">
+                            <img src="images/voegtoe_winkelwagen.svg" alt="Aan winkelwagen toevoegen" width="15">
+                        </button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Fleurs de l'Himalaya</h4>
+                        <img src="images/parfumOlie.webp" alt="Fleurs de L'Himalaya Parfum">
+                        <p>The Iconic Collection eau de parfum, 50ml</p>
+                        <p>€49,90</p>
+                        <button type="button">
+                            <img src="images/voegtoe_winkelwagen.svg" alt="Aan winkelwagen toevoegen" width="15">
+                        </button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>2-in-1 Beard shampoo & conditioner</h4>
+                        <img src="images/baardshampoo.webp" alt="2-in-1 shower gel">
+                        <p>Homme, 2-in-1 Beard shampoo & conditioner 250ml</p>
+                        <p>€9,90</p>
+                        <button type="button">
+                            <img src="images/voegtoe_winkelwagen.svg" alt="Aan winkelwagen toevoegen" width="15">
+                        </button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Refill Anti-Ageing Night Cream</h4>
+                        <img src="images/creme.webp" alt="anti ageing nachtcreme">
+                        <p>The Ritual of Namaste, refill anti-ageing nachtcreme, 50ml</p>
+                        <p>€27,92</p>
+                        <button type="button">
+                            <img src="images/voegtoe_winkelwagen.svg" alt="Aan winkelwagen toevoegen" width="15">
+                        </button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Travel - Soleil d'Or</h4>
+                        <img src="images/eau-de-parfum.webp" alt="Travel, Eau de parfum">
+                        <p>The Iconic Collection, reis eau de parfum, 15ml</p>
+                        <p>€17,90</p>
+                        <button type="button">
+                            <img src="images/voegtoe_winkelwagen.svg" alt="Aan winkelwagen toevoegen" width="15">
+                        </button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Refill Firming Day Cream</h4>
+                        <img src="images/hydratingdaycream.webp" alt="Refill Firming Day Cream">
+                        <p>The Ritual of Namaste, navulling verstevigende dagcreme, 50ml</p>
+                        <p>€30,32</p>
+                        <button type="button">
+                            <img src="images/voegtoe_winkelwagen.svg" alt="Aan winkelwagen toevoegen" width="15">
+                        </button>
+                    </article>
+                </li>
+            </ul>
         </section>
+
+
+        <section>
+            <p>12 van 16  bekeken producten</p>
+            <button>toon meer</button>
+        </section>
+
     </main>
+    <footer>
+        <section>
+            <h3>Blijf op de hoogte</h3>
+            <p>Meld je aan voor het laatste Rituals-nieuws en ontvang exclusieve aanbiedingen. Rituals gebruikt je persoonlijke gegevens zoals beschreven in ons <a href="#">Privacybeleid</a>.</p>
+
+            <form>
+                <label for="emailInvullen"></label>
+                <input type="email" name="q" id="emailInvullen" placeholder="E-mailadres">
+            </form>
+            <a href="#">aanmelden</a>
+        </section>
+         <section>
+            <section>
+                <ul>
+                    <li>
+                        <button type="button">Klantenservice
+                            <img src="images/plusknop.svg" alt="Plusknop">
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">Waar kun je ons vinden
+                            <img src="images/plusknop.svg" alt="Plusknop">
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">Ons merk
+                            <img src="images/plusknop.svg" alt="Plusknop">
+                        </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Rituals app</h2>
+                <a href="#"><img src="images/app-store.webp" alt="ga naar appstore"></a>
+                <a href="#"><img src="images/google-play.webp" alt="ga naar googleplay"></a>
+            </section>
+
+            <section>
+                <h2>Kies je land en je taal</h2>
+                <form>
+                    <label for="landChecken">Land</label>
+                    <input type="checkbox" name="landChecken" id="landChecken">
+
+                    <select name="landKiezen">
+						<button>
+							<selectedcontent></selectedcontent>
+						</button>
+                        <option selected><img src="images/nl.svg" alt="nederlandse vlag">Nederland (Netherlands)</option>
+                        <option><img src="images/de.svg" alt="Duitse vlag">Duitsland (Germany)</option>
+                    </select>
+
+                    <label for="taalKiezen">Taal</label>
+                    <select name="taalKiezen" id="taalKiezen">
+                        <option>Nederlands</option>
+                        <option>English</option>
+                    </select>
+                </form>
+                <button>doorgaan</button>
+            </section>
+
+            <section>
+                <h2>bel onze helpdesk</h2>
+                <dl>
+                    <dt>+31 (0)202415948</dt>
+                    <dd>Lokaal tarief</dd>
+                    <dt>Maandag - Vrijdag</dt>
+                    <dd>09:00 - 21:00</dd>
+                    <dt>Zaterdag - Zondag</dt>
+                    <dd>10:00 - 18:30</dd>
+                </dl>
+                <ul>
+                    <li><a href="#"><img src="images/social-facebook.webp" alt="facebook icoon" width="50"></a></li>
+                    <li><a href="#"><img src="images/tiktok-icon.svg" alt="tiktok icoon" width="50"></a></li>
+                    <li><a href="#"><img src="images/social-pinterest.svg" alt="pintrest icoon" width="50"></a></li>
+                    <li><a href="#"><img src="images/social-youtube.svg" alt="youtube icoon" width="50"></a></li>
+                    <li><a href="#"><img src="images/social-instagram.webp" alt="instagram icoon" width="50"></a></li>
+                </ul>
+                <ul>
+                    <li><img src="images/rituals_footer_logo.svg" alt="footer logo" width="100"></li>
+                    <li><img src="images/b_corp_logo.svg" alt="CertifiedB logo" width="100"></li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <ul>
+                <li><img src="images/logo_ideal.svg" alt="ideal logo" width="50"></li>
+                <li><img src="images/paypal.svg" alt="paypal logo" width="50"></li>
+                <li><img src="images/mc.svg" alt="mastercard logo" width="50"></li>
+                <li><img src="images/amex.svg" alt="american expres logo" width="50"></li>
+                <li><img src="images/rituals-giftcard.webp" alt="rituals giftcards" width="50"></li>
+                <li><img src="images/vvv-cadeaukaart.webp" alt="vvv cadeaukaart" width="50"></li>
+                <li><img src="images/de-cadeaukaart.webp" alt="DE cadeu kaart" width="50"></li>
+                <li><img src="images/beauty-cadeau.webp" alt="Beauty cadeau" width="50"></li>
+                <li><img src="images/fashioncheque.svg" alt="fashioncheque" width="50"></li>
+            </ul>
+
+            <p>Alle rechten voorbehouden © 2025 Rituals Cosmetics B.V.</p>
+
+            <ul>
+                <li><a href="#">Rituals Privacybeleid</a></li>
+                <li><a href="#">Algemen voorwaarden</a></li>
+                <li><a href="#">Rituals Huisregels</a></li>
+                <li><a href="#">Service</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script defer src="scripts/script.js"></script>
+</body>
+</html>
+
+
