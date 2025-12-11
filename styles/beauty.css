@@ -211,9 +211,10 @@ main > section:nth-of-type(3) > ul > li:not(:first-child) article button {
   align-items: center;
   align-self: end;
   margin: 0 0.8em 0.8em 0;
-  img {
-    width: 1.5em;
-  }
+}
+
+main > section:nth-of-type(3) > ul > li:not(:first-child) article button img {
+   width: 1.5em;
 }
 
 
@@ -334,7 +335,7 @@ main > section:nth-of-type(4) > button:hover {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0.1em;
     padding-left: 1em;
-    font-size: 3.2em;
+    font-size: 4em;
     color: var(--tekst-kleur-licht);
     width: 8em;
     height: auto;
@@ -343,3 +344,21 @@ main > section:nth-of-type(4) > button:hover {
 
 }
 
+
+@media (prefers-color-scheme: dark) {
+  main > section:nth-of-type(2) img:first-of-type {
+    filter: invert(1);
+  }
+
+}
+
+main > section:nth-of-type(4) > h4 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  font-size: 0.01em;
+}

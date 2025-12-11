@@ -7,7 +7,6 @@ main > section:first-of-type {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  overflow: hidden;
 }
 
 main > section:first-of-type > ul:nth-of-type(2) img {
@@ -30,8 +29,8 @@ main > section:first-of-type > ul:first-of-type {
 
 main > section:first-of-type > ul:first-of-type li a {
   color: var(--tekst-kleur-licht);
-  background-color: rgba(26, 25, 25, 0.4);
-  padding: .5em 1em;
+  background-color: rgba(26, 25, 25, 0.95);
+  padding: 0.5em 1em;
   border-radius: 2em;
 }
 
@@ -59,7 +58,7 @@ main > section:first-of-type > ul:nth-of-type(2) {
     padding-bottom: 2em;
     margin: 1em;
     border: none;
-    color: white;
+    color: var(--tekst-kleur-licht);
   }
 
   &::scroll-button(right) {
@@ -367,36 +366,16 @@ h1 {
 }
 
 
-@media (min-width: 760px) {
 
-  main > section:first-of-type > img {
-    display: block;
-    width: 100%;
-    height: 75vh;
-    object-fit: cover;
-  }
 
-  main > section:first-of-type {
-    position: relative;
-  }
 
-  main > section:first-of-type > h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 0.5em 1em;
-    border-radius: 0.2em;
-    font-size: 2.2em;
-    color: var(--tekst-kleur-licht);
-    height: auto;
-  }
-
-  main > section:first-of-type > ul {
-    position: relative;
-    background-color: var(--header-footer-2ekleur);
-    padding: 1em;
-    margin-top: -0.2em; 
-  }
+main > section:last-of-type > h4 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  font-size: 0.01em;
 }

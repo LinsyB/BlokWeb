@@ -234,7 +234,7 @@ header button img {
 }
 
 
-
+/* 
 @media (min-width: 760px) {
 
   nav {
@@ -263,7 +263,7 @@ header button img {
   }
 
 
-}
+} */
 
 
 
@@ -614,9 +614,6 @@ option img {
 
 
 
-
-
-
 button:focus {
   border: 0.06em solid var(--product-tekst);
 }
@@ -626,6 +623,12 @@ a:focus {
 }
 
 
+@media (prefers-color-scheme: dark) {
+  footer > section:nth-of-type(2) section:nth-of-type(3) button:last-of-type {
+    background-color: var(--achtergrond-contrast);
+  }
+}
+
 
 
 @media (min-width: 760px) {
@@ -634,7 +637,7 @@ a:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 4em;
-    row-gap: o.5em;
+    row-gap: 0.5em;
     padding: 4em 6em;
   }
 
@@ -677,9 +680,49 @@ a:focus {
   }
 }
 
+footer > section:nth-of-type(1) > h4 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  font-size: 0.01em;
+}
+
+footer > section:last-of-type > h4 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  font-size: 0.01em;
+}
 
 
+footer > section:nth-of-type(2) > h4 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  font-size: 0.01em;
+}
 
 
-
+footer > section:nth-of-type(2) > section:nth-of-type(1) > h4 {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  font-size: 0.01em;
+}
 

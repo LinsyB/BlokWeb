@@ -1,4 +1,4 @@
-// JavaScript Document
+
 console.log("hi");
 
 const deButton = document.querySelector("nav > button");
