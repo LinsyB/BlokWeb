@@ -249,5 +249,6 @@ echte site
   4. https://codepen.io/shooft/pen/ogxdyRN
   5. https://una.im/select-updates/
   6. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display
+  7. https://tailwindcss.com/docs/white-space
 
 </details>

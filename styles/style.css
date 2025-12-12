@@ -534,7 +534,7 @@ footer > section:last-of-type ul:last-of-type {
   justify-content: center;
   gap: 2em;
   font-size: 0.8em;
-  white-space: nowrap;
+  white-space: nowrap;    /*  Bron 7: https://tailwindcss.com/docs/white-space */
 }
 
 footer > section:last-of-type ul:last-of-type a {
