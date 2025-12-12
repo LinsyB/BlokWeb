@@ -204,8 +204,8 @@ Wat nog beter kan, is dat niet alle headings al aanwezig zijn. Op sommige plekke
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images\FireShot Capture 008 - RITUALS - Home - [127.0.0.1].png" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images\FireShot Capture 009 - RITUALS - Beauty - [127.0.0.1].png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images\ScreenshotHomep.png" width="500px" alt="uitomst opdracht 1">
+  <img src="readme-images\screenshotbeautyp.png" width="500px" alt="uitomst opdracht 1">
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik vond dat het responsive maken van mijn website behoorlijk goed ging, ik heb op veel plekken gebruik gemaakt van media qeuries om ervoor te zorgen dat het op alle schermformaten er goed uit ziet. 
