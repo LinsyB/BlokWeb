@@ -244,7 +244,10 @@ echte site
   <summary>continu bijhouden terwijl je werkt</summary>
 
   1. https://www.a11yproject.com/posts/how-to-hide-content/
-  2. bron 2
-  3. ...
+  2. https://codepen.io/shooft/pen/myepoJo
+  3. https://codepen.io/shooft/pen/EaKLRLO
+  4. https://codepen.io/shooft/pen/ogxdyRN
+  5. https://una.im/select-updates/
+  6. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display
 
 </details>

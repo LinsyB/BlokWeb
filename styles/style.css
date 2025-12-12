@@ -3,7 +3,7 @@
   src: url("../fonts/ScalaSansW05-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: swap;      /* Bron 6:  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@font-face/font-display */
 }
 
 @font-face {
@@ -166,6 +166,8 @@ header {
   display: flex;
   flex-direction: column;
 }
+
+/* bron 3: https://codepen.io/shooft/pen/EaKLRLO */
 
 header > ul:first-of-type {
   margin:0;
@@ -578,6 +580,8 @@ select:active {
   background-color: var(--achtergrond-contrast);
 }
 
+/* Bron 4: https://codepen.io/shooft/pen/ogxdyRN + Bron 5: https://una.im/select-updates/  */
+
 selectedcontent {
   display:flex;
   align-items:center;
@@ -611,7 +615,6 @@ option:active {
 option img {
   width:1.6em;
 }
-
 
 
 button:focus {
@@ -679,6 +682,10 @@ a:focus {
     justify-content: flex-start;
   }
 }
+
+
+
+/* snap ik niet, Bron 1:  https://www.a11yproject.com/posts/how-to-hide-content/ */
 
 footer > section:nth-of-type(1) > h4 {
   clip: rect(0 0 0 0);
